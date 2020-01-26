@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,600i&display=swap');
+
+:root {
+  --red: #DC143C;
+}
+
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  /*grid-template-rows: 50px 500px 500px 400px 150px;*/
+  grid-template-areas:
+        "nav-bar"
+        "about-me"
+        "projects"
+        "resume"
+        "footer"
+  }
+
+.grid-item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+  background-color: var(--red);
+}
+
+.nav-bar {
+  grid-area: nav-bar;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 150px));
+  justify-content: center;
+  justify-items: center;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.about-me {
+  grid-area: about-me;
+  background-color: white;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.about-me-photo img{
+  width: 100%;
+}
+
+.bullet-icons {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  align-items: center;
+}
+
+.bullet-icon {
+  width: 100%;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+
+.resume {
+  grid-area: resume;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+ @media (max-width: 700px) {
+      .container {
+        /*grid-template-rows: 75px 500px 500px 400px 150px;*/
+      }
+      .nav-bar {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        justify-content: space-around;
+        padding: 10px;
+      }
+      .about-me {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+      }
+      .about-me-photo {
+        order: 2;
+      }
+      .about-me-content {
+        order: 1;
+        text-align: center;
+      }
+
+    }
