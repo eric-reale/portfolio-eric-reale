@@ -1,0 +1,50 @@
+.about-me {
+  grid-area: about-me;
+  background-color: white;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.about-me-photo img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.bullet-icons {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  align-items: center;
+}
+
+.bullet-icon {
+  width: 100%;
+}
+
+ @media (max-width: 700px) {
+      .about-me {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+      }
+      .about-me-photo {
+        order: 2;
+      }
+      .about-me-content {
+        order: 1;
+        text-align: center;
+      }
+  }
+
+@media (max-width: 900px) and (min-width: 701px) {
+    .about-me {
+      grid-template-columns: 1fr 1fr;
+    }
+    .about-me-photo {
+      order: 1;
+    }
+    .about-me-content {
+      order: 2;
+      text-align: center;
+    }
+  }

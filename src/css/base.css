@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,600i&display=swap');
 
+@import "stylesheets/about_me.css";
+@import "stylesheets/navbar.css";
+@import "stylesheets/tech_stack.css";
+
 :root {
   --red: #DC143C;
 }
@@ -20,55 +24,16 @@
 
 .grid-item {
   display: grid;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: center;
   border: 5px solid rgba(0, 0, 0, 0.03);
   border-radius: 3px;
-  background-color: var(--red);
-}
-
-.nav-bar {
-  grid-area: nav-bar;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 150px));
-  justify-content: center;
-  justify-items: center;
-  background-color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-}
-
-.about-me {
-  grid-area: about-me;
-  background-color: white;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-}
-
-.about-me-photo img{
-  width: 100%;
-}
-
-.bullet-icons {
-  display: grid;
-  grid-template-columns: 1fr 10fr;
-  align-items: center;
-}
-
-.bullet-icon {
-  width: 100%;
-}
-
-.tech-stack {
-  grid-area: tech-stack;
+  /*background-color: var(--red);*/
 }
 
 .projects {
   grid-area: projects;
 }
-
 
 .resume {
   grid-area: resume;
@@ -78,38 +43,5 @@
   grid-area: footer;
 }
 
- @media (max-width: 700px) {
-      .container {
-        /*grid-template-rows: 75px 500px 500px 400px 150px;*/
-      }
-      .nav-bar {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
-        justify-content: space-around;
-        padding: 10px;
-      }
-      .about-me {
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-      }
-      .about-me-photo {
-        order: 2;
-      }
-      .about-me-content {
-        order: 1;
-        text-align: center;
-      }
-    }
 
-  @media (max-width: 900px) and (min-width: 701px) {
-    .about-me {
-      grid-template-columns: 1fr 1fr;
-    }
-    .about-me-photo {
-      order: 1;
-    }
-    .about-me-content {
-      order: 2;
-      text-align: center;
-    }
-  }
+
