@@ -51,17 +51,17 @@
 
 <!-- TECH-STACK (START) -->
     <div class="grid-item tech-stack">
-      <div class="tech-stack-lineup javascript">
-        <img src="src/css/icons/js.svg.png" alt="">
-        <p>JavaScript (ES6)</p>
+      <div class="tech-stack-lineup">
+        <img src="src/css/icons/html2.webp" alt="">
+        <p>HTML5</p>
       </div>
       <div class="tech-stack-lineup">
         <img src="src/css/icons/css2.webp" alt="">
         <p>CSS3</p>
       </div>
-      <div class="tech-stack-lineup">
-        <img src="src/css/icons/html2.webp" alt="">
-        <p>HTML5</p>
+      <div class="tech-stack-lineup javascript">
+        <img src="src/css/icons/js.svg.png" alt="">
+        <p>JavaScript (ES6)</p>
       </div>
       <div class="tech-stack-lineup react">
         <img src="src/css/icons/react.png" alt="">
@@ -89,18 +89,12 @@
 <!-- PROJECTS (START) -->
     <div class="project-buttons">
         <button onClick="jsFunction()" class="button1" type="button">All</button>
-        <button class="button1" type="button">JavaScript</button>
-        <button class="button1" type="button">Ruby on Rails</button>
-        <button class="button1" type="button">ReactJS</button>
-      </div>
+        <button onClick="jsFunction()" class="button1" type="button">JavaScript</button>
+        <button onClick="jsFunction()" class="button1" type="button">Ruby on Rails</button>
+        <button onClick="jsFunction()" class="button1" type="button">ReactJS</button>
+    </div>
+
     <div class="grid-item projects">
-<!--
-      <div class="project-buttons">
-        <button class="button1" type="button">All</button>
-        <button class="button1" type="button">JavaScript</button>
-        <button class="button1" type="button">Ruby on Rails</button>
-        <button class="button1" type="button">ReactJS</button>
-      </div> -->
 
       <div class="project-cards">
         <img src="https://images.unsplash.com/photo-1568785629399-0cd9324febdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" alt="">
@@ -125,7 +119,31 @@
 <!-- PROJECTS (END) -->
 
     <div class="grid-item resume">Resume</div>
-    <div class="grid-item contact">Contact Form</div>
+
+
+<!-- CONTACT FORM (START) -->
+    <div class="grid-item contact">
+      <div class="contact-text">
+        <h1>Leave a Message</h1>
+        <hr>
+        <p>Have a question or want to work together?</p>
+      </div>
+      <form class="contact-form">
+        <!-- <label for="name" class="name">Name</label> -->
+        <input id="name" type="text" placeholder="Name">
+
+        <!-- <label for="email" class="email">Email</label> -->
+        <input id="email" type="text" placeholder="Email">
+
+        <!-- <label for="message" class="message">Message</label> -->
+        <textarea id="message" rows="5" cols="5" placeholder="Message"></textarea>
+
+        <button type="submit" class="contact-submit">Submit</button>
+      </form>
+    </div>
+<!-- CONTACT FORM (END) -->
+
+
     <div class="grid-item footer">Footer</div>
 
   </div>

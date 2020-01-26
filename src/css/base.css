@@ -4,6 +4,8 @@
 @import "stylesheets/navbar.css";
 @import "stylesheets/tech_stack.css";
 @import "stylesheets/projects.css";
+@import "stylesheets/contact.css";
+@import "stylesheets/footer.css";
 
 :root {
   --red: #DC143C;
@@ -35,10 +37,6 @@
 
 .resume {
   grid-area: resume;
-}
-
-.contact {
-  grid-area: contact;
 }
 
 .footer {
