@@ -20,19 +20,27 @@
 
 @media (max-width: 700px) {
    .projects {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 5%;
+      margin-right: 5%;
   }
 }
 
 @media (max-width: 900px) and (min-width: 701px) {
     .projects {
       grid-template-columns: repeat(2, 1fr);
+      margin-left: 5%;
+      margin-right: 5%;
    }
 }
 
 @media (max-width: 720px) {
   .project-buttons {
-    grid-template-columns: 125px 125px;
+    grid-template-columns: 100px 100px;
+  }
+  .button1 {
+    font-size: 10px;
+    padding: 5px;
   }
 }
 

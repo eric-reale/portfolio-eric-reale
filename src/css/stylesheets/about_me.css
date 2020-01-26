@@ -36,6 +36,12 @@
         order: 1;
         text-align: center;
       }
+      .about-me-photo img{
+        width: 200px;
+        border-radius: 50%;
+        margin: 0 auto;
+        display: grid;
+      }
   }
 
 @media (max-width: 900px) and (min-width: 701px) {

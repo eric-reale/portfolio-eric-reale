@@ -20,6 +20,7 @@
         "project-buttons"
         "projects"
         "resume"
+        "contact"
         "footer"
   }
 
@@ -34,6 +35,10 @@
 
 .resume {
   grid-area: resume;
+}
+
+.contact {
+  grid-area: contact;
 }
 
 .footer {
