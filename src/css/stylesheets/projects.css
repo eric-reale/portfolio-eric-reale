@@ -1,0 +1,77 @@
+.projects {
+  grid-area: projects;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.project-cards {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  align-items: center;
+}
+
+.project-cards img {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+   .projects {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 900px) and (min-width: 701px) {
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 720px) {
+  .project-buttons {
+    grid-template-columns: 125px 125px;
+  }
+}
+
+@media (min-width: 720px) {
+  .project-buttons {
+  grid-template-columns: repeat(auto-fit, minmax(125px, 125px));
+  }
+}
+
+.project-buttons {
+  grid-area: project-buttons;
+  margin-top: 15px;
+  display: grid;
+  grid-gap: 20px;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+button {
+  display: inline-block;
+  color: gray;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid gray;
+  margin: 20px;
+  text-decoration:none;
+  font-size: 14px;
+  transition: all .3s;
+}
+
+.button1 {
+  border-radius: 5px !important;
+  border-collapse: separate;
+}
+
+.hover {
+  color: white !important;
+  font-weight: 600;
+  background-color: gray;
+}
+
