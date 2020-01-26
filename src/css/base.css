@@ -4,11 +4,24 @@
 @import "stylesheets/navbar.css";
 @import "stylesheets/tech_stack.css";
 @import "stylesheets/projects.css";
+@import "stylesheets/resume.css";
 @import "stylesheets/contact.css";
 @import "stylesheets/footer.css";
 
 :root {
   --red: #DC143C;
+  /*set variables*/
+}
+
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 .container {
@@ -33,14 +46,6 @@
   border: 5px solid rgba(0, 0, 0, 0.03);
   border-radius: 3px;
   /*background-color: var(--red);*/
-}
-
-.resume {
-  grid-area: resume;
-}
-
-.footer {
-  grid-area: footer;
 }
 
 
