@@ -12,6 +12,7 @@
   grid-template-areas:
         "nav-bar"
         "about-me"
+        "tech-stack"
         "projects"
         "resume"
         "footer"
@@ -60,6 +61,10 @@
   width: 100%;
 }
 
+.tech-stack {
+  grid-area: tech-stack;
+}
+
 .projects {
   grid-area: projects;
 }
@@ -94,5 +99,17 @@
         order: 1;
         text-align: center;
       }
-
     }
+
+  @media (max-width: 900px) and (min-width: 701px) {
+    .about-me {
+      grid-template-columns: 1fr 1fr;
+    }
+    .about-me-photo {
+      order: 1;
+    }
+    .about-me-content {
+      order: 2;
+      text-align: center;
+    }
+  }
