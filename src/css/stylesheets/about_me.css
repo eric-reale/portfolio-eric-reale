@@ -9,6 +9,27 @@
   padding: 10px;
 }
 
+.about-me-content h1 {
+  font-size: 40px;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.about-me-content h1:before, .about-me-content h1:after {
+  display: block;
+  content: '';
+  height: 10px;
+  background: #ffc600;
+  background: linear-gradient(to left, yellow, transparent);
+}
+
+.about-me-content  h1:after {
+  background: linear-gradient(to right, yellow, transparent);
+}
+
 .about-me-photo img{
   width: 100%;
   border-radius: 50%;
@@ -36,6 +57,9 @@
         order: 1;
         text-align: center;
       }
+      .about-me-content h1 {
+        font-size: 32px;
+      }
       .about-me-photo img{
         width: 200px;
         border-radius: 50%;
@@ -54,5 +78,8 @@
     .about-me-content {
       order: 2;
       text-align: center;
+    }
+    .about-me-content h1 {
+      font-size: 32px;
     }
   }
