@@ -19,3 +19,12 @@
         padding: 10px;
       }
   }
+
+ @media (max-width: 900px) and (min-width: 701px) {
+      .nav-bar {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        grid-gap: 5px;
+        justify-content: space-around;
+        padding: 10px;
+      }
+  }

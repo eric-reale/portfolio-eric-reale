@@ -62,6 +62,11 @@ html {
   font-weight: 800;
 }
 
+.grid-item p {
+  color: #757575;
+  line-height: 30px;
+}
+
 .gradient-header h1 {
   font-size: 40px;
   grid-column: 1 / -1;

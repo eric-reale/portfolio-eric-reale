@@ -61,10 +61,13 @@
       }
       .about-me-content {
         order: 1;
-        text-align: center;
+        text-align: left;
       }
       .about-me-content h1 {
         font-size: 32px;
+      }
+      .about-me-content p {
+        margin-left: 12px;
       }
       .about-me-photo img{
         width: 200px;
@@ -76,7 +79,7 @@
 
 @media (max-width: 900px) and (min-width: 701px) {
     .about-me {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 2fr 3fr;
     }
     .about-me-photo {
       order: 1;

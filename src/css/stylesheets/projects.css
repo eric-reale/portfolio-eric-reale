@@ -6,6 +6,10 @@
   margin-top: 80px;
 }
 
+.projects-header p {
+  text-align: right;
+}
+
 .projects {
   grid-area: projects;
   display: grid;

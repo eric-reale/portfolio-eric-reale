@@ -6,6 +6,10 @@
   margin-top: 80px;
 }
 
+.tech-stack-header p {
+  margin-bottom: 30px;
+}
+
 .tech-stack {
   grid-area: tech-stack;
   display: grid;
@@ -46,6 +50,10 @@
       grid-template-columns: 1fr;
       margin-top: 5px;
    }
+   .tech-stack-header p {
+      text-align: center;
+      margin-top: 5px;
+   }
    .tech-stack {
       grid-template-columns: repeat(4, 1fr);
       margin-left: 5%;
@@ -70,6 +78,10 @@
 }
 
 @media (max-width: 1350px) and (min-width: 701px) {
+      .tech-stack-header {
+      grid-template-columns: 2fr 1fr;
+      margin-top: 5px;
+   }
     .tech-stack {
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 5px;
