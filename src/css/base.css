@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,600i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap');
 
+@import "stylesheets/opening_header.css";
 @import "stylesheets/about_me.css";
 @import "stylesheets/navbar.css";
 @import "stylesheets/tech_stack.css";
@@ -12,11 +14,13 @@
   --red: #DC143C;
   /*set variables*/
  background-color: white;
+ --light-blue: #b4dfe8;
 }
 
 html {
   /* border-box box model allows us to add padding and border to our elements without increasing their size */
   box-sizing: border-box;
+  font-family: 'Muli', sans-serif;
 }
 
 *,
@@ -31,8 +35,11 @@ html {
   grid-template-columns: 1fr;
   grid-template-areas:
         "nav-bar"
+        "opening-header"
         "about-me"
+        "tech-stack-header"
         "tech-stack"
+        "projects-header"
         "project-buttons"
         "projects"
         "resume"
@@ -44,9 +51,41 @@ html {
   display: grid;
   /*justify-content: center;*/
   align-items: center;
-  border: 5px solid rgba(0, 0, 0, 0.03);
+  /*border: 5px solid rgba(0, 0, 0, 0.03);*/
   border-radius: 3px;
   /*background-color: var(--red);*/
+    margin-left: 10%;
+  margin-right: 10%;
 }
 
+.grid-item h1,h2,h3,h4,h5,h6 {
+  font-weight: 800;
+}
+
+.gradient-header h1 {
+  font-size: 40px;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.gradient-header h1:before, .gradient-header h1:after {
+  display: block;
+  content: '';
+  height: 10px;
+  background: #ffc600;
+  background: linear-gradient(to left, var(--light-blue), transparent);
+}
+
+.gradient-header h1:after {
+  background: linear-gradient(to right, var(--light-blue), transparent);
+}
+
+@media (max-width: 700px) {
+   .gradient-header h1 {
+      font-size: 30px;
+   }
+}
 

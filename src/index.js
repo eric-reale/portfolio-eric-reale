@@ -10,3 +10,13 @@ function removeHover(e) {
 
 buttons.forEach(button => button.addEventListener('mouseover', hover))
 buttons.forEach(button => button.addEventListener('mouseout', removeHover))
+
+// console.log(`
+//     #     #      #######                             ###
+//     #     # #       #    #    # ###### #####  ###### ###
+//     #     # #       #    #    # #      #    # #      ###
+//     ####### #       #    ###### #####  #    # #####   #
+//     #     # #       #    #    # #      #####  #
+//     #     # #       #    #    # #      #   #  #      ###
+//     #     # #       #    #    # ###### #    # ###### ### `);
+// console.log('This website was built by Eric Reale.');

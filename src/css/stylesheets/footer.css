@@ -1,7 +1,7 @@
 .footer {
   grid-area: footer;
   grid-template-columns: 1fr;
-  background-color: gray;
+  /*background-color: #fdfcfd*/
 }
 
 .social-media {

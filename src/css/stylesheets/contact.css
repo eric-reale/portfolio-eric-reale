@@ -5,8 +5,6 @@
   grid-template-columns: 1fr 2fr;
   background-color: rgb(36, 40, 52);
   color: white;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .contact-text {
@@ -52,11 +50,11 @@
     order: 2;
   }
   .contact-form input {
-    width: 350px;
+    width: 250px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .contact-form input {
-    width: 250px;
+    width: 200px;
   }
 }
