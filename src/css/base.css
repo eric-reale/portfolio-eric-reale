@@ -54,8 +54,8 @@ html {
   /*border: 5px solid rgba(0, 0, 0, 0.03);*/
   border-radius: 3px;
   /*background-color: var(--red);*/
-    margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 18%;
+  margin-right: 18%;
 }
 
 .grid-item h1,h2,h3,h4,h5,h6 {
@@ -93,4 +93,10 @@ html {
       font-size: 30px;
    }
 }
+
+@media (max-width: 900px) and (min-width: 701px) {
+    .grid-item {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
 
