@@ -38,6 +38,21 @@
   margin-top: 10px;
 }
 
+.social-media p a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media p a:hover {
+  text-decoration: none;
+  color: var(--light-blue);
+  transition: all .2s;
+}
+
+.social-media-icons {
+  padding: 20px;
+}
+
 
 @media (max-width: 900px) {
   .contact {
