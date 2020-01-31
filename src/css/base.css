@@ -51,7 +51,7 @@ html {
   display: grid;
   /*justify-content: center;*/
   align-items: center;
-  border: 5px solid rgba(0, 0, 0, 0.03);
+  /*border: 5px solid rgba(0, 0, 0, 0.03);*/
   border-radius: 3px;
   /*background-color: var(--red);*/
   margin-left: 18%;
